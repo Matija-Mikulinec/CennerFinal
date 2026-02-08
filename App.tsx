@@ -21,9 +21,11 @@ import Cookies from './pages/Cookies';
 import ScrollToTop from './components/ScrollToTop';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
+
 const App: React.FC = () => {
   return (
     <Router>
+      <SpeedInsights />
       <ScrollToTop />
       <Layout>
         <Routes>
