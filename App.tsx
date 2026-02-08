@@ -20,12 +20,14 @@ import TermsOfService from './pages/TermsOfService';
 import Cookies from './pages/Cookies';
 import ScrollToTop from './components/ScrollToTop';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
 
 
 const App: React.FC = () => {
   return (
     <Router>
       <SpeedInsights />
+      <Analytics />
       <ScrollToTop />
       <Layout>
         <Routes>
